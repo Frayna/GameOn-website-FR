@@ -14,7 +14,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-image: url("background.png");
   font-family: var(--font-default);
   font-size: 18px;
   max-width: 1300px;
@@ -226,6 +225,12 @@ input {
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
+.formData[data-valid] .text-control{
+	border: 2px solid #48b558;
+}
+.formData{
+	position: relative;
+}
 /* 
 input[data-error]::after {
     content: attr(data-error);
@@ -270,7 +275,11 @@ input[data-error]::after {
   opacity: 0;
 }
 .checkbox-input {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  top: 20px;
+  left: 10px;
 }
 .checkbox-input:checked + .checkbox-label .checkbox-icon::after,
 .checkbox-input:checked + .checkbox2-label .checkbox-icon::after {
@@ -462,6 +471,7 @@ input[data-error]::after {
   height: 100%;
   display: block;
   padding: 0;
+	object-fit: cover;
 }
 .copyrights {
   color: #fe142f;
