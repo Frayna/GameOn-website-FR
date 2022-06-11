@@ -1,0 +1,7 @@
+Faire une fonction de refresh, et le déclencher au click sur la 2e croix et le bouton valider (2e modal) OK
+Mettre en place la JSDoc OK
+Vérif pour la dateNaissance OK
+Object fit sur l'image principale OK
+Corriger les erreurs W3C
+Préparer powerpoint du P4
+Réserver la soutenance du P4
